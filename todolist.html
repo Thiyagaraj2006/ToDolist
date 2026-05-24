@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        /*my to-do list*/
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading section -->
+
+    <h1>To-Do LIST:</h1>
+
+    <!-- table section -->
+
+    <table>
+        <thead>
+            <th>Task</th>
+            <th>Yes</th>
+            <th>No</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="task input" placeholder="Enter Your Task"></td>
+                <td><input type="radio" name="yes"></td>
+                <td><input type="radio" name="yes"></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="task input" placeholder="Enter Your Task"></td>
+                <td><input type="radio" name="yes1"></td>
+                <td><input type="radio" name="yes1"></td>
+            </tr>
+
+
+            <tr>
+                <td><input type="text" name="task input" placeholder="Enter Your Task"></td>
+                <td><input type="radio" name="yes2"></td>
+                <td><input type="radio" name="yes2"></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <h1> My To-Do List</h1>
+
+    <ul>
+        <li>
+            <input type="checkbox"> Wake up early
+        </li>
+        <li>
+            <input type="checkbox"> Study HTML
+        </li>
+        <li>
+            <input type="checkbox"> Practice coding
+        </li>
+        <li>
+            <input type="checkbox"> Complete assignment
+        </li>
+        <li>
+            <input type="checkbox"> Sleep on time
+        </li>
+    </ul>
+
+    <h2>Daily Tasks</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Task</th>
+            <th>Done</th>
+        </tr>
+        <tr>
+            <td>Morning Exercise</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Attend Class</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Study Notes</td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+    
+
+
+</body>
+
+</html>
+
+<!-- notes:
+
+    for checkboxes, CSS styles
+    
+    /* Strike-through when checked */
+
+    /* :checked-It applies only when the checkbox is checked */
+
+    /* + span
+      This is the adjacent sibling selector
+      It selects the <span> that comes immediately after the checkbox 
+      
+      Structure must be like this: 
+      <input type="checkbox">
+      <span>Task name</span>
+
+    */
+    
+    input[type="checkbox"]:checked+span {
+      text-decoration: line-through;
+      /*Draws a line through the text */
+      color: gray;
+      /*Changes the text color to grey*/
+    } -->
